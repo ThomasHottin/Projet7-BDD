@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #ccdbfd;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  min-height: 500px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #e2eafc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: #ffe0c7;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.video-container:hover iframe {
+  opacity: 0.8;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 400px;
+    min-height: 600px;
+  }
+}
+
+.genre-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.genre-container li {
+  margin-right: 10px;
+}
+
+.genre-container li a {
+  text-decoration: none;
+  color: #6e3200;
+  font-weight: bold;
+}
